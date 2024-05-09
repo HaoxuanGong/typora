@@ -30,7 +30,7 @@ jobs:
 
       - name: Install dependencies and start Express server
         run: |
-          cd ..
+          cd frontend
           cd frontend-server
           npm install
           npm start
