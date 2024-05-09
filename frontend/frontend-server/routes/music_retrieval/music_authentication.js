@@ -45,7 +45,7 @@ router.get('/callback', async (req, res) => {
 
     try{
         // receving the refresh token and access token
-        const response = await axios.get(url, { params: {...req.query, redirectUri: "http://localhost:5000/api/music/callback"} });
+        const response = await axios.get(url, { params: {...req.query, redirectUri: "http://54.251.136.11:5000/api/music/callback"} });
         console.log(response.data);
 
         // saving the refresh token and access token
