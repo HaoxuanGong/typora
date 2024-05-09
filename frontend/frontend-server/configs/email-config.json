@@ -1,5 +1,5 @@
 {
-    "host": "localhost",
+    "host": "3.25.133.136",
     "port": 30056,
     "getVerificationCode": "/api/verification/get",
     "verifyCode": "/api/verification/verify",
