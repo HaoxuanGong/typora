@@ -1,0 +1,80 @@
+.YouTubeRow-container{
+    display: flex;
+    flex-direction: column;
+    /* font-size: 2vw; */
+    padding: 6.33vh ;
+    padding-top: 6vh;
+    z-index: 2;
+}
+
+.YouTubeRow-container .videoList{
+    display: flex;
+    list-style-type: none;
+    width:100%;
+    justify-content: space-around;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.YouTubeRow-container .videoList .videoListElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-right: 1vw;
+    align-content: space-between;
+    padding-bottom: 2vh;
+}
+
+.YouTubeRow-container .videoList .videoListElement .videoImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    transition: width 0.5s ease-in-out; 
+    border-radius: 5%;
+}
+
+.YouTubeRow-container .videoList .videoListElement .videoImage:hover {
+    width: 21vw;
+}
+
+.YouTubeRow-container .videoList .videoInfo-container{
+    display: flex;
+    margin-top: 1vh;
+
+}
+
+.YouTubeRow-container .videoList .videoInfo-container .playArrow{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    /* margin-left: -1vw; */
+    margin-top: 2.7vh;
+}
+
+.YouTubeRow-container .videoList .videoInfo{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: self-start;
+    width: 20rem;
+}
+.YouTubeRow-container .videoList .videoInfo .videoTitle{
+    font-size: 1.9vh;
+    width: 20rem;
+    /* margin-left: 1vw; */
+    text-overflow: ellipsis;
+}
+
+.videoListElementSkeleton{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-right: 1.5vw;
+    align-content: space-between;
+    padding-bottom: 4vh;
+}

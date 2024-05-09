@@ -1,0 +1,47 @@
+.Spotify-container{
+    position: relative;
+    z-index: 4;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    /* padding: 9.33vh ;
+    margin-left: 5vw; */
+}
+
+.AIRecommendationContainer .staticBall{
+    top: 85vh;
+    right: 10vw;
+    background-image: radial-gradient(circle at center, rgb(10, 103, 83) 0%, rgba(2, 122, 92, 0.7) 50%, rgba(0, 0, 0, 0) 70%);
+    width: 50vh;
+    height: 50vh;
+}
+
+.SpotifyRowContainer .staticBall{
+    top: 200vh;
+    right: 10vw;
+    background-image: radial-gradient(circle at center, rgb(224, 62, 230) 0%, rgba(110, 29, 119, 0.7) 50%, rgba(33, 10, 27, 0) 80%);;
+    width: 60vh;
+    height: 60vh;
+}
+
+.RecommendationBall .staticBall{
+    top: 125vh;
+    right: 81vw;
+    background-image: radial-gradient(circle at center, rgb(35, 197, 162) 0%, rgba(31, 143, 115, 0.7) 50%, rgba(0, 0, 0, 0) 300%);
+    width: 40vh;
+    height: 40vh;
+    z-index: -20;
+}
+
+.FilterBall .staticBall{
+    top: 145vh;
+    right: 78vw;
+    background-image: radial-gradient(circle at center, rgb(188, 93, 191) 0%, rgba(110, 46, 118, 0.7) 50%, rgba(33, 10, 27, 0) 300%);;
+    width: 60vh;
+    z-index: -20;
+    height: 60vh;
+}

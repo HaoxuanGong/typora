@@ -1,0 +1,11 @@
+{
+    "host": "localhost",
+    "port": 30051,
+    "orderTracksByPopularity": "/api/tracks/popularity",
+    "searchTracks": "/api/tracks",
+    "redirectToSpotify": "/api/auth/login",
+    "handleSpotifyCallback": "/api/auth/callback",
+    "getAccessToken": "/api/auth/token",
+    "saveTokens": "/api/auth/token",
+    "nextTracksPage": "/api/tracks/switch"
+}

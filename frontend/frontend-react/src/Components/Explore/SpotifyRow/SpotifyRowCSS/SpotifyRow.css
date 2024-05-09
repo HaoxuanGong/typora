@@ -1,0 +1,70 @@
+.SpotifyRow-container{
+    display: flex;
+    flex-direction: column;
+    padding: 6.33vh ;
+    padding-top: 3.6vh;
+    height:40vh;
+    position: relative;
+    z-index: 2;
+}
+
+.SpotifyRow-container .navigationAllLink{
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.87vh;
+    text-decoration: none;
+    margin-left: 82vw;
+    margin-top: 2.2vh;
+    background-color: #D3F85A; /* The green background color */
+    padding: 1.4vh 4vh; /* Padding inside the button */
+    border-radius:  3vh; /* The rounded corners */
+    color: #040914;
+    transition:  background-color 0.7s ease, font-size 0.5s ease, text-decoration 0.5s ease;
+}
+
+.SpotifyRow-container .navigationAllLink:hover{
+    background-color: green;
+    border-color: green;
+}
+
+.SpotifyRow-container .musicList{
+    display: flex;
+    list-style-type: none;
+    padding-top: 1.8vh;
+    margin-left: -3vw
+}
+
+.SpotifyRow-container .musicList .musicListElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 4vw; /* element gap*/
+}
+
+.SpotifyRow-container .musicList .musicListElement .musicImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12vw;
+    transition: width 0.5s ease-in-out; 
+    border-radius: 1rem;
+}
+
+.SpotifyRow-container .musicList .musicListElement .musicImage:hover {
+    width: 14vw;
+}
+
+.SpotifyRow-container .musicList .musicInfo-container{
+    display: flex;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+.SpotifyRow-container .musicList .musicInfo-container .musicInfo{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-left: 0.5vw; 
+    text-align: start;
+
+}

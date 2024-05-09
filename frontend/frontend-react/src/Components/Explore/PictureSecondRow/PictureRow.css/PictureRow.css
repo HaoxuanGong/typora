@@ -1,0 +1,67 @@
+.pictureRow-container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+  
+.pictureRow-container .leftPicture {
+    display: flex;
+    flex-direction: row;
+    list-style: none; 
+    padding: 0; /* Removes default padding */
+    margin: 0;
+    margin-left: -6.5vw;
+    animation: slideInLeftPicture 3s ease-in-out forwards;
+}
+
+@keyframes slideInLeftPicture {
+    from {
+        margin-left: -40vw;
+        opacity: 0; 
+    }
+    to {
+        margin-left: -6.5vw;
+        opacity: 1; 
+    }
+}
+
+.pictureRow-container .leftPicture li{
+    margin-right: 3vh;
+}
+
+.pictureRow-container .leftPicture li img {
+    width:33.23vh;
+    height:33.6vh;
+}
+
+.pictureRow-container .rightBallPicture{
+    margin-left:15vw;
+    animation: slideInLeftPictureBall 5s ease-in-out forwards,  rotateBall infinite 10s linear;
+}
+
+@keyframes slideInLeftPictureBall {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateBall {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.pictureRow-container .rightBallPicture img {
+    width:33.23vh;
+    height:33.6vh;
+}
+  

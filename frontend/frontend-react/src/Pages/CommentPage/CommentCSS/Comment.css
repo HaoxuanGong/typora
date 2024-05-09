@@ -1,0 +1,93 @@
+.comments-container {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  width: 50vh;
+  height: 76vh;
+  padding: 2.63vh;
+  margin: 2.63vh;
+  background: #1e1e1e;
+  border-radius: 2vh 0 0 2vh;
+  color: white;
+  font-family: "Inter", sans-serif;
+  overflow: auto;
+
+
+  &::-webkit-scrollbar {
+    width: 0.5vh;  /* Adjust the height of the scrollbar using viewport height */
+    background-color: #333;  /* dark background for the scrollbar track */
+}
+
+/* Style the draggable part of the scrollbar (thumb) */
+&::-webkit-scrollbar-thumb {
+    background-color: #46c0e9;  /* light green color for the scrollbar thumb */
+    border-radius: 0.5vh;  /* rounded corners for the scrollbar using viewport height */
+    border: 0.1vw solid #444;  /* dark border around the scrollbar thumb using viewport width */
+}
+
+/* Style the part of the scrollbar track (part not being dragged over) */
+&::-webkit-scrollbar-track {
+    background-color: #444;  /* slightly lighter dark shade for the track */
+}
+}
+
+.comments-header {
+  font-size: 2vh;
+  font-weight: 100;
+  line-height: 2vh;
+  word-wrap: break-word;
+  margin-bottom: 2vh;
+  
+}
+
+.comments {
+  display: flex;
+  border-radius: 1.32vh;
+  margin-top: 1.32vh;
+  padding: 1.32vh;
+  flex-wrap: no-wrap;
+
+}
+
+.comments-avatar {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  margin-right: 1.32vh;
+}
+
+.comments-author {
+  color: white;
+  margin-left: 0.8vw;
+  font-size: 1.75vh;
+  font-weight: 400;
+  line-height: 2.2vh;
+  word-wrap: break-word;
+}
+
+.comments-text {
+  color: #d0d0da;
+  font-size: 1.5vh;
+  font-weight: 400;
+  width: 18vw;
+  line-height: 2vh;
+  word-wrap: break-word;
+  margin-top: 0.5vh;
+  margin-left: 0.8vw;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.nav-button {
+  background: #1b1d21;
+  color: white;
+  font-size: 1.75vh;
+  padding: 1vh 2vh;
+  border-radius: 1.32vh;
+  cursor: pointer;
+}

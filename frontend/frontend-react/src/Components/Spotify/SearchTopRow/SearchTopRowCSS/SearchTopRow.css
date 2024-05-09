@@ -1,0 +1,123 @@
+.SearchTopRow-container{
+    margin-top: 2vh;
+    display: flex;
+    z-index: 2;
+    padding: 6vh;
+    height: 55vh;
+}
+
+.TopRowText{
+    color: white;
+    font-size: 4.5vh;
+    margin-left: 58.5vw;
+    margin-top: 44vh;
+    position: absolute;
+    z-index: 3;
+}
+
+.TopRowImg{
+    position: absolute;
+    margin-left: 4.2vw;
+    margin-top: 20vh;
+    height: 20vh;
+    width: 3.3vw;
+    z-index: 4;
+    background-image: url('../../../../assets/musicGenre.png');
+}
+
+.SearchTopRow-container .left {
+    flex: 6;
+    background-image: url('../../../../assets/SpotifyLogo.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 2vh;
+    border-radius: 5%;
+}
+
+.SearchTopRow-container .left .searchBar{
+    position: absolute;
+    top: 15vh;
+    left: 8vw;
+}
+
+.SearchTopRow-container .right{
+    flex: 2;
+    margin-top: 3vh;
+    background-color: rgba(26, 26, 26, 0.817);
+    border-radius: 5% 0 0 5%;
+    overflow-y: scroll;
+}
+
+/* Styles the scrollbar track */
+.SearchTopRow-container .right::-webkit-scrollbar-track {
+    background-color: #444; /* Light grey track */
+}
+
+/* Styles the scrollbar thumb */
+.SearchTopRow-container .right::-webkit-scrollbar-thumb {
+    background-color: #32CD32;  /* light green color for the scrollbar thumb */
+    border-radius: 0.5vh;  /* rounded corners for the scrollbar using viewport height */
+    border: 0.1vw solid #444; /* Light grey border */
+}
+
+/* Styles the scrollbar itself (width, etc.) */
+.SearchTopRow-container .right::-webkit-scrollbar {
+    width: 0.5vh;  /* Adjust the height of the scrollbar using viewport height */
+    background-color: #333; 
+}
+
+.SearchTopRow-container .right h4{
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+}
+
+.SearchTopRow-container .musicList{
+    list-style-type: none;
+    margin-top: 1.8vh;
+}
+
+.SearchTopRow-container .musicList .musicListElement{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.8vh; /* element gap */
+}
+
+.SearchTopRow-container .musicList .musicListElement .musicImage{
+    height: 6.5vh;
+    margin-left: -0.3vw;
+    transition: height 0.5s ease-in-out;  
+    border-radius: 10%;
+}
+
+.SearchTopRow-container .musicList .musicListElement .musicImage:hover {
+    height: 7.5vh;
+}
+
+.SearchTopRow-container .musicList .musicInfo-container{
+    display: flex;
+    margin-top: 0vh;
+}
+
+.SearchTopRow-container .musicList .musicInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.3vw;
+}
+
+.topTitle{
+    padding-left: 0.5vw;
+    font-size: 2vh;
+}
+
+.topMusicPlay{
+    margin-left: 7vw;
+    color: white;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+
+.search-icon:hover {
+    transform: scale(1.1);
+}

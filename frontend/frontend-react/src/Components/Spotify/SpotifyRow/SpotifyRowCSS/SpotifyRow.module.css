@@ -1,0 +1,58 @@
+.SpotifyRowContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 9vh ;
+    padding-top: 3vh;
+    margin-bottom: 3rem;
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+    
+}
+.musicList{
+    display: flex;
+    list-style-type: none;
+    padding-top: 1.8vh;
+    margin-left: -3vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.musicListElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5.5vw; /* element gap*/
+    padding-bottom: 2vh;
+    width: 12vw;
+}
+
+.musicImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12vw;
+    border-radius: 10%;
+    transition: width 0.5s ease-in-out; 
+}
+
+.musicImage:hover {
+    width: 14vw;
+}
+
+.musicInfoContainer{
+    display: flex;
+    margin-top: 1vh;
+    margin-left: -3.8vw;
+    width: 100%;
+}
+
+.musicInfo{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-left: 2vw; 
+    text-align: start;
+}
