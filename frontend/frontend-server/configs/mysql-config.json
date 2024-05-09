@@ -1,5 +1,5 @@
 {
-    "host": "localhost",
+    "host": "43.156.7.163",
     "port": 30000,
     "selectUserById": "/api/users",
     "insertUser": "/api/users",
