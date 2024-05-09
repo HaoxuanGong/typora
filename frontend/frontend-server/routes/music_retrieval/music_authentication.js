@@ -30,7 +30,7 @@ router.get('/signin', async (req, res) => {
     console.log(url);
 
     try{
-        const response = await axios.get(url, { params: {redirectUri: "http://localhost:5000/api/music/callback"} });
+        const response = await axios.get(url, { params: {redirectUri: "http://54.251.136.11:5000/api/music/callback"} });
         res.json(response.data);
     }catch(error){
         console.error("Error during retrieving sign in url:", error.response ? error.response.data : error.message);
@@ -50,7 +50,7 @@ router.get('/callback', async (req, res) => {
 
         // saving the refresh token and access token
         const { refreshToken, accessToken } = response.data;
-        res.redirect('http://localhost:5000/spotify/signin?accessToken=' + accessToken + '&refreshToken=' + refreshToken);
+        res.redirect('http://54.251.136.11:5000/spotify/signin?accessToken=' + accessToken + '&refreshToken=' + refreshToken);
 
     }catch(error){
         console.error("Error during retrieving sign in url:", error.response ? error.response.data : error.message);
