@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 
 app.use(express.static(path.join(__dirname, '../frontend-react/build')));
@@ -22,5 +22,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, "0.0.0.0", () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);
 });
